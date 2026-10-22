@@ -1,0 +1,30 @@
+{
+  "name": "@deepseek-ai/dsh-engram-pq",
+  "description": "Engram p/q + BFP-64 engine exposed as a Cordis service — run the sovereign benchmark from inside the tree",
+  "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/8b-is/deepseek-harness.git",
+    "directory": "packages/extensions/engram-pq"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "workspace:~"
+  }
+}
